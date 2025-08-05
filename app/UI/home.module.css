@@ -1,0 +1,38 @@
+.color_red {
+    color: #b21b13;
+}
+
+
+.color_gray_input {
+    color: #333;
+}
+
+.color_gray_input_hover {
+    color: #888;
+}
+
+.color_bg_red {
+    background-color: #b21b13;
+}
+
+.gray_bg_input {
+    background-color: #968e8e;
+}
+
+.blue_bg {
+    background-color: #408FD8;
+}
+
+/* .input {
+    width: 400px;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff8f8;
+    color: #333;
+} */
+
+/* input::placeholder {
+    color: #888;
+} */
