@@ -1,15 +1,13 @@
 // import Image from "next/image";
+'use client';
 import { FaUser, FaSearch, FaShoppingCart } from "react-icons/fa";
 import { IoMenu } from "react-icons/io5";
-
 import styles from "../../UI/home.module.css";
 import { montserrat, roboto } from "../../UI/fonts";
 import { IconAutocaucho } from "../icons/icon-autocaucho/Icon-autocaucho";
-import { NavLinks } from "../navLinks/NavLinks";
 
 export function Navbar() {
   return (
-    <header>
     <nav className={`${styles.color_bg_red} flex items-center justify-between px-6 p-2 md:px-6 lg:px-12`}>
       <IoMenu className="h-9 w-9 text-white cursor-pointer md:hidden lg:hidden"/>
       <IconAutocaucho />
@@ -36,19 +34,5 @@ export function Navbar() {
         </div>  
       </section>
     </nav>
-    <section className={`${styles.blue_bg} h-[50px] w-full flex items-center justify-center `}>
-      <div className={`${styles.gray_bg_input} relative rounded-[10px] w-[60%] md:hidden lg:hidden`}>
-          <input
-            type="text"
-            placeholder="Buscar producto"
-            className={`${styles.color_gray_input} ${styles.color_gray_input_hover} w-full rounded-[10px] p-[5px] pl-6 focus:outline-blue-500 bg-white md:w-[400px] lg:hidden`}
-          />
-          <FaSearch
-            className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 underline" 
-          />
-        </div>
-        <NavLinks />
-    </section>
-    </header>
   );
 }

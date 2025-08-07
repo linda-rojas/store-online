@@ -1,12 +1,14 @@
 import Carousel from "./components/carousel/Carousel";
-import { Navbar } from "./components/navbar/navbar"; 
+import { Foooter } from "./components/footer/page";
+import { Header } from "./components/header/page"; 
 
 export default function Home() {
 
   return (
     <>
-      <Navbar />
+      <Header />
       <Carousel />
+      <Foooter />
     </>
   );
 }

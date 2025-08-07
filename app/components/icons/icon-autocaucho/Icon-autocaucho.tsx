@@ -1,4 +1,4 @@
-import styles from "/app/UI/styles.module.css";
+import styles from "../../../UI/home.module.css";
 
 export function IconAutocaucho() {
     return (
