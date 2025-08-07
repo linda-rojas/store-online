@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { PropsWithChildren } from "react";
 import { Header } from "../components/header/page";
-import { Foooter } from "../components/footer/page";
+import { Footer } from "../components/footer/page";
 
 
 const PanelLayout: FC<PropsWithChildren> = ({ children }) => {
@@ -13,7 +13,7 @@ const PanelLayout: FC<PropsWithChildren> = ({ children }) => {
         <section>
           {children}
         </section>
-          <Foooter />
+          <Footer />
       </div>
   );
 }

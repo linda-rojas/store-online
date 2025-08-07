@@ -1,5 +1,5 @@
 import Carousel from "./components/carousel/Carousel";
-import { Foooter } from "./components/footer/page";
+import {  Footer } from "./components/footer/page";
 import { Header } from "./components/header/page"; 
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Header />
       <Carousel />
-      <Foooter />
+      <Footer />
     </>
   );
 }
