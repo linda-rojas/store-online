@@ -12,7 +12,7 @@ interface Producto {
   precio: number;
 }
 
-export default function Refrigerantes() {
+export default function Suspencion() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [productos, setProductos] = useState<Producto[]>([]);
   const [productsPerPage] = useState(8);
@@ -20,7 +20,7 @@ export default function Refrigerantes() {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const response = await fetch("/api/refrigerantes");
+        const response = await fetch("/api/suspencion");
         const data = await response.json();
         setProductos(data);
       } catch (error) {
@@ -52,7 +52,7 @@ export default function Refrigerantes() {
     <div className="flex flex-col justify-center items-center gap-8 my-15">
       <section className="flex items-center justify-center w-full mb-8">
         <span className="bg-[#D9D9D9] text-[#408fd8] font-extrabold text-[20px] p-2 rounded-md">
-          REFRIGERANTES
+          SUSPENCIÓN
         </span>
       </section>
 
